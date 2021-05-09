@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <form th:action="@{/report}" method="post">
+        <label>
+            Name
+            <input type="text" name="name">
+        </label>
+        <label>
+            From
+            <input type="datetime-local" name="from">
+        </label>
+        <label>
+            To
+            <input type="datetime-local" name="to">
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
